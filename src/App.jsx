@@ -45,12 +45,39 @@ function App() {
                   </form>
                 </div>
                 <div className="mx-2 flex items-center">
-                  <img className="w-6 h-7" src={cartImg} alt="cart"></img>
+                  <img className="h-7 w-6" src={cartImg} alt="cart"></img>
                 </div>
               </div>
             </div>
-            <div></div>
-            <div></div>
+            <div className="z-50 self-stretch 2xl:order-first">
+              <div className="flex h-full">
+                <button className="ml-2 p-2" type="button">
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-white"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </nav>
         </header>
       </div>
