@@ -1,3 +1,5 @@
+import cartImg from './assets/img/cart.webp';
+
 function App() {
   return (
     <div id="wrap">
@@ -40,15 +42,15 @@ function App() {
                         </svg>
                       </button>
                     </div>
-                    <div className="mx-2 flex items-center">
-                      <a href="//auth.robotcache.com/Account/Verify?returnUrl=https://store.robotcache.com/#/search/">
-                        <span class="sr-only">Cart</span>
-                        <span class="bg-cart-icon hover:text-rc-gold block h-7 w-6 bg-contain bg-bottom bg-no-repeat pl-1 text-center text-xs text-white"></span>
-                      </a>
-                    </div>
                   </form>
                 </div>
-                <div className="mx-2 flex items-center"></div>
+                <div className="mx-2 flex items-center">
+                  <a href="#">
+                    <span class="sr-only">Cart</span>
+                    <span class="object-center bg-cart-icon hover:text-rc-gold block h-7 w-6 bg-contain bg-bottom bg-no-repeat pl-1 text-center text-xs text-white"></span>
+                    <img className="w-6 h-7 object-center" src={cartImg} alt="cart"></img>
+                  </a>
+                </div>
               </div>
             </div>
             <div></div>
