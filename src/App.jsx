@@ -45,11 +45,7 @@ function App() {
                   </form>
                 </div>
                 <div className="mx-2 flex items-center">
-                  <a href="#">
-                    <span class="sr-only">Cart</span>
-                    <span class="object-center bg-cart-icon hover:text-rc-gold block h-7 w-6 bg-contain bg-bottom bg-no-repeat pl-1 text-center text-xs text-white"></span>
-                    <img className="w-6 h-7 object-center" src={cartImg} alt="cart"></img>
-                  </a>
+                  <img className="w-6 h-7" src={cartImg} alt="cart"></img>
                 </div>
               </div>
             </div>
