@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import cartImg from './assets/img/cart.webp';
+import SideMenu from './components/SideMenu';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function menuClickHandler() {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
     <div id="wrap">
       <div className="grid min-h-screen grid-rows-layout bg-purple bg-gradient-to-br from-[#000] via-[#45248d] via-60% to-[#200871]">
@@ -51,7 +59,7 @@ function App() {
             </div>
             <div className="z-50 self-stretch 2xl:order-first">
               <div className="flex h-full">
-                <button className="ml-2 p-2" type="button">
+                <button className="ml-2 p-2" onClick={menuClickHandler} type="button">
                   <svg
                     stroke="currentColor"
                     fill="none"
@@ -79,13 +87,7 @@ function App() {
               </div>
             </div>
           </nav>
-          <div className="auto-rows-min bg-black grid items-center fixed min-w-[228px] overflow-auto right-0 top-20 h-full transform transition duration-500 translate-x-full transform-none">
-            <div className="grid text-white font-default text-sm py-2 px-4 justify-between items-center flex ">Stash</div>
-            <div className="grid text-white font-default text-sm py-2 px-4 justify-between items-center flex ">Store</div>
-            <div className="grid text-white font-default text-sm py-2 px-4 justify-between items-center flex ">Social</div>
-            <div className="grid text-white font-default text-sm py-2 px-4 justify-between items-center flex ">About</div>
-            <div className="grid text-white font-default text-sm py-2 px-4 justify-between items-center flex ">Redeem Code</div>
-          </div>
+          <SideMenu menuOpen={menuOpen} />
         </header>
       </div>
     </div>
