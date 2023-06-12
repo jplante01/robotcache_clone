@@ -59,7 +59,11 @@ function App() {
             </div>
             <div className="z-50 self-stretch 2xl:order-first">
               <div className="flex h-full">
-                <button className="ml-2 p-2" onClick={menuClickHandler} type="button">
+                <button
+                  className="ml-2 p-2"
+                  onClick={menuClickHandler}
+                  type="button"
+                >
                   <svg
                     stroke="currentColor"
                     fill="none"
@@ -89,6 +93,22 @@ function App() {
           </nav>
           <SideMenu menuOpen={menuOpen} />
         </header>
+        <main></main>
+        <footer row-start-3 row-end-4>
+          <div className="flex flex-col font-montserrat justify-center items-center px-4 py-6 text-center text-white text-xs">
+            <p className="mb-4">
+              © 2023 Robot Cache US, Inc. All rights reserved. Robot Cache is a
+              trademark of Robot Cache Inc. All other trademarks cited or appearing
+              herein are the property of their respective owners.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:divide-x">
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Privacy Policy</a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Legal</a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Subscriber Agreement</a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Terms of Service</a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );

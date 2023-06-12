@@ -9,6 +9,7 @@ export default {
       white: '#FFF',
       black: '#000',
       purple: '#200871',
+      gold: '#fdc038',
     },
     extend: {
       gridTemplateRows: {
