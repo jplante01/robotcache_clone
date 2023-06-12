@@ -93,19 +93,47 @@ function App() {
           </nav>
           <SideMenu menuOpen={menuOpen} />
         </header>
-        <main></main>
+        <main className="row-start-2 row-end-3 overflow-x-hidden">
+          <div id="content">
+            <div id="storefront" className="cols-2 relative grid grid-cols-2 border-b-4 border-gold">
+              <button className="absolute top-[50%] translate-y-[50%]" type="button">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 320 512"
+                  color="white"
+                  height="44"
+                  width="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" />
+                </svg>
+              </button>
+              <p className="h-96"></p>
+            </div>
+          </div>
+        </main>
         <footer row-start-3 row-end-4>
-          <div className="flex flex-col font-montserrat justify-center items-center px-4 py-6 text-center text-white text-xs">
+          <div className="font-montserrat flex flex-col items-center justify-center px-4 py-6 text-center text-xs text-white">
             <p className="mb-4">
               © 2023 Robot Cache US, Inc. All rights reserved. Robot Cache is a
-              trademark of Robot Cache Inc. All other trademarks cited or appearing
-              herein are the property of their respective owners.
+              trademark of Robot Cache Inc. All other trademarks cited or
+              appearing herein are the property of their respective owners.
             </p>
             <div className="flex flex-col sm:flex-row sm:flex-wrap sm:divide-x">
-              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Privacy Policy</a>
-              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Legal</a>
-              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Subscriber Agreement</a>
-              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">Terms of Service</a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">
+                Privacy Policy
+              </a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">
+                Legal
+              </a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">
+                Subscriber Agreement
+              </a>
+              <a href="#" className="mb-2 text-gold sm:mb-0 sm:px-4">
+                Terms of Service
+              </a>
             </div>
           </div>
         </footer>
