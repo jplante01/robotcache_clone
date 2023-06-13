@@ -9,7 +9,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-+      gridTemplateColumns: {
++      gridTemplateRows: {
 +        layout: '80px 1fr auto;',
 +      },
     },
